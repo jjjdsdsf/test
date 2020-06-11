@@ -5,6 +5,9 @@
 
 using namespace std;
 
+//智能指针
+
+
 struct Person : enable_shared_from_this<Person>{
 public:
     //正确的获取

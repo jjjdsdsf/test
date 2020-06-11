@@ -4,6 +4,9 @@
 
 using namespace std;
 
+//可变参数
+
+
 #define ARG_BEGIN(ars,type)(ars = (char*)(&type) + sizeof(type))
 #define ARG_ARG(ags,type)(*(type*) ((ags += sizeof(type)) - sizeof(type)) )
 #define ARG_END(ags)(ags = nullptr)
